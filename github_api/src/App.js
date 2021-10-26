@@ -24,20 +24,15 @@ class GitHub extends Component
 
     console.log('Função chamada')
 
-    // url passando o nome como uma variavel
     fetch('https://api.github.com/users/' + this.state.nome + '/repos')
 
-    // resposta como json
     .then(resposta => resposta.json())
 
-    // atualiza a lista
     .then(lista => this.setState({ listaRepositorios : lista }))
 
-    // Caso de algum erro, mostra no console
     .catch( erro => console.log(erro) )
   }
 
-  // Atualiza o nome com o valor do inpput
   atualizaEstadoNome = async (nome) => 
   {                       //Nome state   //Valor Input
     await this.setState({ nome : nome.target.value })
@@ -50,7 +45,6 @@ class GitHub extends Component
     <div className="App">
       <main>
         <section>
-          {/* tras o componente header */}
           <Header/>
           <form onSubmit={this.buscarRepositorios}>
             <div>
