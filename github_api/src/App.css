@@ -1,0 +1,39 @@
+body {
+  background-color: #eee;
+
+}
+
+header {
+  text-align: center;
+}
+
+
+.errorText {
+  color: red;
+}
+
+
+.repoItemContainer {
+  
+  padding: 10px;
+  width: 27%;
+  background: #fff;
+  height: 150px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px #ddd;
+  text-decoration: none;
+}
+
+.repoItemContainer > span {
+  font-size: 14px;
+  font-weight: normal;
+  color: #000;
+}
+
+.repoItemContainer > span:first-child {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
